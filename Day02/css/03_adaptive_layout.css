@@ -22,7 +22,7 @@ header, nav, section, footer {
     margin-bottom: 10px;
 }
 
-/* 테블릿 - 800px~ */
+/* 테블릿 - 800px~ (800px 이상이면 바뀌는 값) */
 @media screen and (min-width: 800px) {
     .wrapper { width: 640px; }
     header, footer { width: 640px; }
@@ -40,3 +40,7 @@ header, nav, section, footer {
     nav { width: 200px; }
     section { width: 750px; }
 }
+
+
+/* @media screen and (min-width: 800px) and (max-width: 999px)
+   : 800 ~ 999px 까지의 적용값 */
