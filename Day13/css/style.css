@@ -19,7 +19,7 @@ address, em, i {font-style: normal;}
 body {font-family: 'Noto Sans KR', sans-serif; font-size: 14px;}
 
 /* 포인트(영어) 폰트 */
-.en { font-family: 'Exo 2', sans-serif; }
+.en { font-family: 'Exo 2' ,sans-serif; }
 .wrap { margin: 0 auto; }
 
 /* 헤더 */
@@ -30,7 +30,7 @@ header {
     top: 0;
     left: 0;
     line-height: 100px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0,0,0,0.2);
     z-index: 200;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 /* 로고 */
-.innerHeader .logo { float: left; }
+.innerHeader .logo { float: left;}
 .innerHeader .logo img { width: 100%; height: auto; }
 
 /* GNB */
@@ -50,7 +50,7 @@ header {
 .innerHeader .gnb li { float: left; margin-right: 80px; }
 .innerHeader .gnb li a {
     display: block; width: 100%; height: 100%; text-align: center;
-    color: #fff; font-size: 16px;
+    color:  #fff; font-size: 16px;
 }
 .innerHeader .gnb li a:hover,
 .innerHeader .gnb li a:focus { color: #ff8342; }
@@ -97,32 +97,36 @@ section.main .mainTitle {
     color: #fff;
     /* 텍스트 가운데 정렬 */
     text-align: center;
-    text-shadow: 5px 5px 20px rgba(8, 8, 8, 0.5);
+    text-shadow: 5px 5px 20px rgba(8,8,8,0.5);
     animation: mainTitle 1s;
 }
 
 /* 불투명해지면서 위로 올라오는 애니메이션 */
 @keyframes mainTitle {
-    0% {opacity: 0; top: 60%;}
-    30% {opacity: 0; top: 60%;}
-    100% {opacity: 1; top: 50%;}
+    0% { opacity: 0; top: 60%; }
+    30% { opacity: 0; top: 60%; }
+    100% { opacity: 1; top: 50%; } 
 }
 
+
+
+/* 제목 - 글꼴-크기 : 55px, 마진-아래 : 20px */  
 section.main .mainTitle h2 { font-size: 55px; margin-bottom: 20px; }
+/* 설명 - 글꼴-크기 : 25px, 마진-아래 : 30px */  
 section.main .mainTitle p { font-size: 25px; margin-bottom: 30px; }
 
 section.main .mainTitle .view {
     display: block; width: 180px; margin: 0 auto;
-    padding: 8px 0; font-size: 15px;
+    padding: 8px 0; font-size: 15px; 
     border: 1px solid #fff; border-radius: 40px; overflow: hidden;
-    position: relative; 
+    position: relative;
     text-transform: uppercase;
-}
+} 
 
 section.main .mainTitle .view:after {
     content: ''; width: 0; height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    position: absolute; left: 0; top: 0;
+    background-color: rgba(255,255,255,0.4);    
+    position: absolute; left: 0; top: 0; 
     transition: all 0.6s;
 }
 
@@ -130,35 +134,35 @@ section.main .mainTitle .view:hover:after {
     width: 100%;
 }
 
-/* 섹션 : title (공통) */
+/*  섹션 : title (공통)  */
 section .title { color: #000; text-align: center; }
-section .title h2 { font-size: 45px; margin-bottom: 5px; font-weight: normal; }
+section .title h2 { font-size: 45px; margin-bottom: 5px; font-weight: normal; } 
 section .title h2 span { color: #ff8342; }
-section .title p { font-size: 18px; color: #555; } 
+section .title p { font-size: 18px; color: #555; }
 
 
 /* 섹션 : about */
 section.about { background-color: #fff; padding: 80px 0; }
 section.about ul {
     margin: 30px auto; width: 1400px; border-bottom: 1px solid #ddd; overflow: hidden;
-} 
+}
 
 section.about ul li { float: left; width: calc(100%/3); }
 section.about ul li a { display: block; width: 100%; height: 100%; }
-section.about ul li a p.img { width: 100%; overflow: hidden; }
+section.about ul li a p.img { width: 100%; overflow: hidden;}
 section.about ul li a p.img img { width: 100%; height: auto; transition: all 0.8s; }
 
 /* 이미지에 마우스 hover/focus - 이미지 확대 */
-section.about ul li a:hover p.img img,
-section.about ul li a:focus p.img img {
+section.about ul li  a:hover p.img img,
+section.about ul li  a:focus p.img img {
     transform: scale(1.2);
     transition: all 1s;
 }
 
-section.about ul li a .text { padding: 30px; }
-section.about ul li a .text h3 { font-size: 20px; margin-bottom: 10px; }
-section.about ul li a .text p { font-size: 16px; margin-bottom: 10px; }
-section.about ul li a .text p.more {
+section.about ul li  a .text { padding: 30px; }
+section.about ul li  a .text h3 { font-size: 20px; margin-bottom: 10px; }
+section.about ul li  a .text p { font-size: 16px; margin-bottom: 10px; }
+section.about ul li  a .text p.more {
     text-transform: uppercase;
     font-weight: bold;
     padding-left: 40px;
@@ -184,9 +188,10 @@ section.about ul li a .text p.more:hover::before {
     background-color: black;
 }
 
+
 /* 섹션 : innovations */
 section.innovations { margin-bottom: 150px; }
-section.innovations .imgBox { 
+section.innovations .imgBox {
     width: 1400px; height: 540px; margin: 50px auto;
     background: url(../img/product_1.jpg) no-repeat center/cover;
     position: relative;
@@ -195,34 +200,32 @@ section.innovations .imgBox {
 section.innovations .imgBox .inner {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     bottom: -50px;
     width: 80%;
     background-color: #3a3c4e;
 }
-
-section.innovations .imgBox .inner h3 { 
+section.innovations .imgBox .inner h3 {
     background-color: #fff;
     padding: 25px 45px;
     box-sizing: border-box;
     font-size: 18px;
 }
 section.innovations .imgBox .inner h3 span { color: #ff8342; }
-section.innovations .imgBox .inner .bottom { 
+section.innovations .imgBox .inner .bottom {
     padding: 35px 85px; box-sizing: border-box; color: #fff;
     overflow: hidden; line-height: 1.6;
 }
 section.innovations .imgBox .inner .bottom p { float: left; }
 section.innovations .imgBox .inner .bottom a { 
-    float: right; padding: 7px 30px;
+    float: right; padding: 7px 30px; 
     background-color: #ff8342; border-radius: 50px;
 }
 
 section.innovations .imgBox .inner .bottom a:hover,
-section.innovations .imgBox .inner .bottom a:focus { 
+section.innovations .imgBox .inner .bottom a:focus {
     background-color: #f86010;
 }
-
 
 /* 섹션 : me */
 section.me {
@@ -238,8 +241,8 @@ section.me ul.list {
 
 section.me ul.list > li { padding: 30px 60px; box-sizing: border-box; }
 /* 직무특성 및 소개 */
-section.me ul.list > li:nth-child(1) { border-bottom: 1px solid #ddd;}
-section.me ul.list li h3 {
+section.me ul.list > li:nth-child(1) { border-bottom: 1px solid #ddd; }
+section.me ul.list li h3 { 
     font-size: 18px; margin-bottom: 20px; position: relative;
 }
 /* 아이콘 */
@@ -255,7 +258,7 @@ section.me ul.list li > a span {
 section.me ul.in { margin-bottom: 30px; }
 section.me ul.in li { margin-bottom: 10px; overflow: hidden; }
 section.me ul.in li em { float: left; width: 12%; font-weight: bold; }
-section.me ul.in li p {float: left; width: 88%; position: relative; }
+section.me ul.in li p { float: left; width: 88%; position: relative; }
 /* 가상선택자를 이용한 기호 스타일링 */
 section.me ul.in li p::before {
     content: '';
@@ -291,11 +294,11 @@ section.sns ul {
 }
 
 section.sns ul li {
-    float: left; 
     width: calc(97%/3); 
+    float: left; 
     margin-right: 1.5%;
 }
-section.sns ul li:last-child { margin-right: 0; }
+section.sns ul li:last-child { margin-right: 0;}
 section.sns ul li a { display: block; width: 100%; height: 100%; }
 section.sns ul li a p.img { overflow: hidden; position: relative; }
 section.sns ul li a p.img img { width: 100%; }
@@ -304,22 +307,23 @@ section.sns ul li a p.img img { width: 100%; }
 section.sns ul li a p.img::before {
     content: ''; width: 100%; height: 100%;
     position: absolute; left: 0; top: 0;
-    background-color: rgba(255, 131, 66, 0.7);
+    background-color: rgba(255,131,66,0.7);
     transition: all 0.5s;
     opacity: 0;
 }
 
 section.sns ul li a:hover p.img::before,
 section.sns ul li a:focus p.img::before {
-    opacity: 1; transition: all 0.5s;
+    opacity: 1; 
+    transition: all 0.5s;
 }
 
 section.sns ul li a p.img::after {
     content: 'BLOG';
     position: absolute; 
-    top: 50%; left: 50%;
+    top: 50%; left: 50%; 
     transform: translate(-50%, -50%);
-    font-size: 20px; color: #fff;
+    font-size: 20px; color: #fff; 
     font-family: 'Exo 2', sans-serif;
     padding: 5px 30px;
     border: 1px solid #fff; border-radius: 40px;
@@ -333,8 +337,8 @@ section.sns ul li a:focus p.img::after {
     transition: all 0.5s;
 }
 
-section.sns ul li a .bottom { 
-    width: 100%; padding: 20px 0 20px 30px; box-sizing: border-box;
+section.sns ul li a .bottom {
+    width: 100%; padding: 20px 0 20px 30px; box-sizing: border-box; 
 }
 section.sns ul li a .bottom p {
     font-size: 18px; font-weight: bold;
@@ -348,7 +352,7 @@ section.sns ul li a .bottom p.time {
 }
 section.sns ul li a .bottom p.time::before {
     font-family: FontAwesome;
-    content: '\f017';        /* 시계 아이콘 */
+    content: '\f017';            /* 시계 아이콘 */
     font-size: 15px;
     line-height: 30px;
     position: absolute;
@@ -365,7 +369,7 @@ footer .inner .address li:first-child { font-weight: bold; margin-bottom: 10px; 
 footer .inner .address li:last-child { color: #999; }
 
 footer .inner .list { float: right; margin-top: 10px; }
-footer .inner .list li { float: left; margin-left: 80px; }
+footer .inner .list li { float: left; margin-left: 80px;}
 footer .inner .list li a { display: block; width: 100%; height: 100%; position: relative; }
 footer .inner .list li a::after {
     content: ''; width: 4px; height: 4px; border-radius: 50%;
@@ -384,12 +388,12 @@ footer .inner .list li:last-child a {
 }
 
 /* 모바일 메뉴 - PC 에서 안보이게 */
-.innerHeader .gnbMo {display: none; }
+.innerHeader .gnbMo { display: none; }
 
-/* 반응형 적용하기 */
+/* 반응형 적용하기 */ 
 @media screen and (max-width:1600px) {  /* 1600px 이하일 때 */
-    header .innerHeader { width: 95%; min-width: 1024px; }
-    .innerHeader .gnb { margin-left: 50px; }  
+    header .innerHeader { width: 95%; min-width: 1024px; }   
+    .innerHeader .gnb { margin-left: 50px; }
     .innerHeader .gnb li { margin-right: 40px; }
     .innerHeader .gnb li:last-child { margin-right: 0; }
     .innerHeader .tnb { margin-right: 10px; }
@@ -397,26 +401,26 @@ footer .inner .list li:last-child a {
     section.innovations .imgBox, 
     section.me ul.list,
     section.sns ul { width: 95%; }
-    footer .inner { width: 95%; min-width: 90px; }
+    footer .inner { width: 95%; min-width: 90%; }
     footer .inner .list li { margin-left: 20px; }
     footer .inner .list li a:after { right: -13px; }
 }
 
-/* 태블릿모드 */
+/* 태블릿모드  */
 @media screen and (max-width:1024px) {
-    header .innerHeader { width: 95%; min-width: 90%; }
-    .innerHeader .gnb, .innerHeader .tnb { display: none; } 
-    .innerHeader .gnbMo { display: block; color: #fff; font-size: 40px; float: right; }
-    section.main .maninTitle { width: 80%; }
+    header .innerHeader { width: 95%; min-width: 90%; }     
+    .innerHeader .gnb, .innerHeader .tnb { display:  none; }  
+    .innerHeader .gnbMo { display: block; color: #fff; font-size: 40px ; float: right;}
+    section.main .mainTitle { width: 80%; }
     section.me { margin-bottom: 50px; }
     section.me ul.in li p::before { left: -20px; }
     section.me ul.in li { margin-bottom: 0; }
-    section.me ul.in li > p {margin-bottom: 10px;}
+    section.me ul.in li > p { margin-bottom: 10px; }
     section.sns ul li { width: 32.2%; margin-right: 1.7%; }
     footer .inner .list { display: none; }
 }
 
-/* 태블릿모드 세로 & 모바일 가로 */
+/* 태블릿모드 세로 & 모바일 가로  */
 @media screen and (max-width:768px) {
     section.main .mainTitle h2 { font-size: 40px; }
     section.main .mainTitle p { font-size: 20px; }
@@ -426,40 +430,41 @@ footer .inner .list li:last-child a {
     section.innovations .imgBox .inner .bottom { padding: 30px; }
     section.innovations .imgBox .inner .bottom p .clear { display: none; }
     section.innovations .imgBox .inner .bottom p { float: none; margin-bottom: 30px; }
-    section.innovations .imgBox .inner .bottom a { float: none; display: block; width: 80px; margin: 0 auto; text-align: center; }
+    section.innovations .imgBox .inner .bottom a { float: none; display: block; width: 80px; margin: 0 auto; text-align: center;}
     section.me { padding: 50px 0; margin-bottom: 80px; }
     section.me ul.in li em { display: block; float: none; width: 100%; font-size: 17px; margin-bottom: 5px; }
     section.sns ul li { width: 100%; }
     footer .inner .ftLogo { float: none; width: 100%; text-align: center; }
     footer .inner .address { float: none; width: 100%; }
     footer .inner .address li:last-child { margin-left: 12%; }
+
 }
 
-/* 태블릿 */
+/* 태블릿  */
 @media screen and (max-width:414px) {
     header { height: 60px; line-height: 60px; }
     .innerHeader { height: 100%; line-height: 60px; }
     .innerHeader .logo img { height: 50px; }
-    section.main .mainTitle h2 { font-style: 30px; }
-    section.main .mainTitle p { font-style: 16px; }
-    section.main .mainTitle .view { width: 150px; font-style: 14px; }
-    section .title h2 { font-style: 25px; }
-    section .title p { font-style: 14px; }
-    section.about { padding: 30px 0; } 
+    section.main .mainTitle h2 { font-size: 30px; }
+    section.main .mainTitle p { font-size: 16px; }
+    section.main .mainTitle .view { width: 150px; font-size: 14px ;}
+    section .title h2 { font-size: 25px; }
+    section .title p { font-size: 14px; }
+    section.about { padding: 30px 0; }
     section.about ul { border-bottom: none; }
     section.about ul li a { 
-        border: 1px solid #ddd; box-sizing: border-box; background-color: #fafafa; margin-bottom: 10px; 
+        border: 1px solid #ddd; box-sizing: border-box; background-color: #fafafa; margin-bottom: 10px;
     }
     section.about ul li a .text p.more { display: none; }
     section.innovations .imgBox .inner .bottom a { padding: 7px 12px; }
     section.me ul.list > li { padding: 20px 0 20px 45px; }
     footer .inner .address { margin-left: 15%; }
     footer .inner .address li:last-child { margin-left: 22%; }
-}
+ }
 
-/* 모바일 */
+/* 모바일  */
 @media screen and (max-width:320px) {
-    br.mo { display: block; }   
+    br.mo { display: block; }
     .wrap { min-width: 320px; }
     header .innerHeader { min-width: 320px; }
     .innerHeader .logo { width: 140px; height: auto; }
@@ -468,10 +473,15 @@ footer .inner .list li:last-child a {
     section.main .mainTitle p { font-size: 14px; }
     section.about { padding: 10px 0; }
     section.about ul li a .text { padding: 15px; }
-    section.about ul li a .text h3 { font-size: 18px; margin-bottom: 5px; }
+    section.about ul li a .text h3 { font-size: 18px; margin-bottom: 5px;}
     section.about ul li a .text p { font-size: 15px; }
     section.innovations .imgBox { height: 300px; }
-    section.innovations .imgBox .inner .bottom a { }
+    section.innovations .imgBox .inner .bottom a {  }
     footer .inner .address { margin-left: 5%; }
     footer .inner .address li:last-child { margin-left: 27%; }
+
 }
+
+
+
+
