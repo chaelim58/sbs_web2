@@ -96,7 +96,7 @@ section.main {
     max-height: 815px;
     background: url(../img/img_mainvisual_bg.png) no-repeat center center;
     position: relative;
- }
+}
 section.main .main-title  {
     margin: 50px auto;
     position: absolute;
@@ -136,7 +136,7 @@ section.main .main-title .sub-title  { font-size: 24px; }
 section.main .img-box { 
     position: absolute;
     left: 50%;
-    bottom: -15px;
+    bottom: -13px;
     transform: translateX(-50%);
     width: 300px;
     z-index: 10;
