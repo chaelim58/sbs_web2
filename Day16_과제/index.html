@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃 템플릿</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 전체영역 : wrap -->
+    <div id="wrap">
+
+        <!-- 헤더 -->
+        <header id="header" class="header inner-box">
+            <!-- 로그인/회원가입 -->
+            <div class="user flex flex-end align-items-center">
+                <ul class="util flex">
+                    <li><a href="#">LOGIN/JOIN</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                </ul>
+            </div>
+
+            <!-- 로고/GNB -->
+            <div class="info flex align-items-center">
+                <h1><a href="#"><img src="img/logo.png" alt="로고"></a></h1>
+
+                <nav>
+                    <ul class="gnb flex pc">
+                        <li>
+                            <a href="#">BRAND</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OFFLINE</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">EVENT</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MAGAZINE</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="search">
+                                제품검색 
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    </ul><!-- .gnb.pc 끝 -->
+
+                    <!-- 모바일 햄버거 메뉴 -->
+                    <div class="mobile-gnb-box mobile">
+                        <!-- 햄버거 메뉴 아이콘 -->
+                        <i class="fa fa-bars"></i>
+                    </div>
+
+                </nav>
+            </div>
+
+        </header>
+        <!-- 메인 -->
+        <main>
+            <!-- 슬라이드 영역 -->
+            <section class="slide">
+                <div class="inner-box">
+                    <ul>
+                        <li><img src="img/main_bg1.jpeg" alt="슬라이드01"></li>
+                        <li><img src="img/main_bg2.jpeg" alt="슬라이드02"></li>
+                        <li><img src="img/main_bg3.jpeg" alt="슬라이드03"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 섹션 -->
+            <section class="inner-box">
+                <!-- 타이틀 영역 -->
+                <div class="section-title">
+                    <h4>PRODUCT</h4><br>
+                    <p>건강한 라이프스타일을 위한 프리미엄 블렌딩</p>
+                </div>
+
+                <!-- 카테고리 영역 -->
+                <div class="section-cate flex flex-center ">
+                    <div class="inner">
+                        <a href="#"><span>NEW</span></a>
+                        <a href="#"><span>BEST</span></a>
+                        <a href="#"><span>시그니처 블렌딩 티</span></a>
+                        <br>
+                        <a href="#"><span>라이프 블렌딩 티</span></a>
+                        <a href="#"><span>프리미엄 티</span></a>
+                        <a href="#"><span>GIFT & SET</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 섹션 - 상품목록 -->
+            <section class="product-list inner-box">
+                <div class="inner flex flex-wrap">
+                    <div class="card"><a href="#"></a>
+                        <img src="img/product_1.jpg" alt="">
+                        <div class="card-content">
+                            <h2>알디프 시그니처 블렌딩 티 <br> 기프트세트 2구</h2>
+                            <p id="content">[공식몰 단독 할인] 디저트와 함께하는 페어링티 추천!
+                                알디프 시그니처 블렌딩 티 시즌 한정 기프트 세트
+                            </p>
+                            <p class="discount">
+                                <span class="throw"> 27,600원</span>
+                                <span class="percent">6%</span>
+                            </p>
+                            <p class="price"> 26,000원</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_2.jpg" alt="">
+                        <div class="card-content">
+                            <h2>[시즌 한정] 알디프 X 부천국제만화축제 콜라보레이션 TEA</h2>
+                            <p id="content">내가 좋아하는 작품 속 세상에선 어떤 향기가 날까? 
+                                알디프 X 부천국제만화축제 시즌 한정 콜라보</p>
+                            <p class="discount">
+                                <span>12,800원</span>
+                            </p>
+                            <p class="sizes">
+                                <span class="on">A</span>
+                                <span class="on">B</span>
+                                <span class="off">C</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_3.jpg" alt="">
+                        <div class="card-content">
+                            <h2>알디프 X 락앤락 메트로 머그</h2>
+                            <p id="content">실용적인 용량에 보냉 보온 기능을 더한 알디프
+                                알디프 X 락앤락 메트로 머그
+                            </p>
+                            <p class="discount">
+                                <span>22,900원</span>
+                            </p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_4.jpg" alt="">
+                        <div class="card-content">
+                            <h2>밤의 차 - 알디프 라이프 블렌딩 티</h2>
+                            <p id="content">#08 꼭 필요한 밤의 8시간 자기 전에 마셔요! 
+                                차분한 밤의 리듬을 만들어 주는 밤의차</p>
+                            <p class="discount">
+                                <span>12,800원</span>
+                            </p>
+                            <p class="sizes">
+                                <span class="on-count">8입</span>
+                                <span class="off-count">14입</span>
+                                <span class="off-count">20입</span>
+                                <span class="on-count">28입</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_5.jpg" alt="">
+                        <div class="card-content">
+                            <h2>낮의 차 - 알디프 라이프 블렌딩 티</h2>
+                            <p id="content">#28 잊을만하면 돌아오는 28일 안온한
+                                그 날의 기분을 위한 상큼달콤 무카페인 허브티
+                            </p>
+                            <p class="discount">
+                                <span>12,800원</span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off-count">8입</span>
+                                <span class="on-count">14입</span>
+                                <span class="off-count">20입</span>
+                                <span class="on-count">28입</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_6.jpg" alt="">
+                        <div class="card-content">
+                            <h2>더하기 차 - 알디프 라이프 블렌딩 티</h2>
+                            <p id="content">#25 유독 상큼한 게 당기는 25주
+                                상큼하고 건강하게 수분 습관을 더하는 더하기차!
+                                물 대신 마셔요
+                            </p>
+                            <p class="discount">
+                                <span>12,800원</span>
+                            </p>
+                            <p class="sizes">
+                                <span class="on-count">8입</span>
+                                <span class="on-count">14입</span>
+                                <span class="off-count">20입</span>
+                                <span class="on-count">28입</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_7.jpg" alt="">
+                        <div class="card-content">
+                            <h2>알디프 생분해 티 필터</h2>
+                            <p id="content"> 전문 다구 없이도 잎차를 우릴 수 있는 친환경
+                                생분해 티 필터 3종
+                            </p>
+                            <p class="discount">
+                                <span>1,500원</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_8.jpg" alt="">
+                        <div class="card-content">
+                            <h2>[EVENT] 알디프 티 퍼퓸 - 리스 브렉퍼스트 블랙</h2>
+                            <p><hr></p>
+                            <p class="discount">
+                                <span class="throw"> 12,000원</span>
+                                
+                            </p>
+                            <p class="price-not"> *품절*</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_9.jpg" alt="">
+                        <div class="card-content">
+                            <h2>서울의 달 그레이 - 알디프 시그니처 블렌딩 티 8입</h2>
+                            <p id="content">서울 밤하늘 아래 그레이 씨 프리미엄 제주 녹차에 상큼한
+                                오렌지가 더해진 블렌딩 티 - 데일리 티 추천
+                            </p>
+                            <p class="discount">
+                                <span class="throw">12,800원</span>
+                                <span class="percent">15%</span>
+                            </p>
+                            <p class="price">10,880원</p>
+                            <p class="sizes">
+                                <span class="off-count">8입</span>
+                                <span class="off-count">14입</span>
+                                <span class="off-count">20입</span>
+                                <span class="on-count">28입</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_10.jpg" alt="">
+                        <div class="card-content">
+                            <h2>나랑 갈래 - 알디프 시그니처 블렌딩 티 8입</h2>
+                            <p id="content"> (무카페인) 햇살 따듯한 날, 나랑 갈래 
+                                새콤달콤한 베리류가 가득, 카페인 없는 루이보스 블랜딩 티
+                                - 밀크티로도 추천
+                            </p>
+                            <p class="discount">
+                                <span>12,800원</span>
+                            </p>
+                            <p class="sizes">
+                                <span class="on-count">8입</span>
+                                <span class="on-count">14입</span>
+                                <span class="on-count">20입</span>
+                                <span class="on-count">28입</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_11.jpg" alt="">
+                        <div class="card-content">
+                            <h2>벨벳 골드 라운드 - 알디프 시그니처 블렌딩 티 8입</h2>
+                            <p id="content">벨벳처럼 묵직하고 부드러우며 달콤한 금빛 묵직한 아쌈의
+                                풍미와 달콤한 초콜릿의 완벽한 조화 - 밀크티로 추천
+                            </p>
+                            <p class="discount">
+                                <span>12,800원</span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off-count">8입</span>
+                                <span class="on-count">14입</span>
+                                <span class="on-count">20입</span>
+                                <span class="on-count">28입</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product_12.jpg" alt="">
+                        <div class="card-content">
+                            <h2>알디프 마스킹테이프 2종</h2>
+                            <p id="content">알디프의 감성을 그대로 담은 종이 재질 마스킹 테이프</p>
+                            <p class="discount">
+                                <span>3,000원</span>
+                            </p>
+                            <p class="colors">
+                                <span class="hotpink"></span>
+                                <span class="purple"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 섹션 - 기타 -->
+            <section class="etc inner-box">
+                <div class="box flex">
+                    <div class="col left">
+                        <img src="img/etc_1.jpg" alt="">
+                        <div class="col-inner">
+                            <h4>나의 차 취향 알아보기</h4>
+                            <p>차 취향 테스트</p>
+                        </div>
+                    </div>
+                    <div class="col right">
+                        <img src="img/etc_2.jpg" alt="">
+                        <div class="col-inner">
+                            <h4>지금 회원가입하면 990원</h4>
+                            <p>리뉴얼 기념 한정수량</p>
+                        </div>
+                    </div>
+                    <div class="col bottom">
+                        <img src="img/etc_3.jpg" alt="">
+                        <div class="col-inner">
+                            <h4>선물하기 좋은 추천템</h4>
+                            <p>숙면을 위한 차</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="inner-box">
+
+            <!-- LOGO/COPY/SNS -->
+            <div class="box flex flex-around">
+                <div class="col flex-center align-items-center">
+                    <h1 class="footer-tel">070.7759.5033 <br>
+                        070.8860.5033
+                    </h1>
+                    <br>
+                    <p>
+                        <span class="bank">BANK INFO</span><br>
+                        기업은행 600.033774.01.011 <br>
+                        예금주 <span class="company">주식회사 알디프</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <ul class="sns">
+                        <li><img src="img/footer_sns_1.jpg" width="50" alt=""></li>
+                        <li><img src="img/footer_sns_2.jpg" width="50" alt=""></li> <br>
+                        <li><img src="img/footer_sns_3.jpg" width="50" alt=""></li>
+                        <li><img src="img/footer_sns_4.jpg" width="50" alt=""></li>
+                        <li><img src="img/footer_sns_5.jpg" width="50" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- fnb -->
+            <div class="fnb flex flex-center align-items-center">
+                <ul class="flex flex-center flex-wrap">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </div>
+            
+        </footer>
+
+    </div>
+</body>
+</html>
